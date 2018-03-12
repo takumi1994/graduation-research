@@ -12,8 +12,8 @@ MyMongoClient：テストスタブを構成するダミーモジュールのひ�
 
 TicketModel：テスト対象のサンプル
 
-TicketModelTest：通常のテストケース（単一のプロセスでは不具合が見逃されうる）
+TicketModelTest：通常のテストケース（単一のプロセスでは不具合が見逃されうる）＊都合によりまだアップできておりません
 
-TicketModelTest-timing：タイミングに依存した不具合を見つけるためのテストケース（本研究）
+TicketModelTest-timing：タイミングに依存した不具合を見つけるためのテストケース
 
 TicketModelTestThread：TicketModelTest-timingで記述したテストケースで，アクセス競合を再現するため並列処理を行わせるスレッドプログラム
