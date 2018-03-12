@@ -4,14 +4,16 @@
 効果：一つのリソースが同一のプログラムによる複数のプロセスで共有される際に起こる並列処理に対して，その処理の実行されるタイミングを調整する．
 
 プログラムの機能
-MyDB
+MyDBCollection：テストスタブを構成するダミーモジュールのひとつ．テスト対象であるTicketModelクラスが呼び出すDBCollectionクラスのダミーモジュールであり，ここでタイミングの制御を行う．
 
-MyDBCollection
+MyDB：テストスタブを構成するダミーモジュールのひとつ．テスト対象であるTicketModelクラスが呼び出すDBクラスのダミーモジュール．
 
-MyMongoClient
+MyMongoClient：テストスタブを構成するダミーモジュールのひとつ．TicketModelクラスが呼び出すMongoClientクラスのダミーモジュール．
 
-TicketModelTest
+TicketModel：テスト対象のサンプル
 
-TicketModelTestThread
+TicketModelTest：通常のテストケース（単一のプロセスでは不具合が見逃されうる）
 
-TicketModelTest-timing
+TicketModelTest-timing：タイミングに依存した不具合を見つけるためのテストケース（本研究）
+
+TicketModelTestThread：TicketModelTest-timingで記述したテストケースで，アクセス競合を再現するため並列処理を行わせるスレッドプログラム
